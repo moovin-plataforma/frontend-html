@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Moovin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
     <title>Moovin</title>
 </head>
@@ -22,13 +23,25 @@
                 </ul>
             </nav>
         </div>
+
         <div id="search-bar-login" > 
+            <div id="menu-mobile">
+                <input type="checkbox" id="check">
+                <label id="icone-menu" for="check"><img src="./imgs/menu.svg"></label>   
+                <div id="bar-menu-mobile">
+                    <nav>
+                        <a href="#"><div class="link">LISTA DE DESEJOS</div></a>
+                        <a href="#"><div class="link">FALE CONOSCO</div></a>
+                        <a href="#"><div class="link">TROCAS E DEVOLUÇÕES</div></a>
+                    </nav>
+                </div>
+            </div>
             <img src="./imgs/logo.svg" id="logo" > 
             <div id="search-bar">
                 <span id="img-search"><img src="./imgs/search.svg" ></span>
-                <input  type="text"  placeholder="O que você está procurando?">
+                <input  type="text"  placeholder="O que você está procurando?" class="input-search-style">
             </div>
-            <div class="dropdown">
+            <div id="dropdown">
                 <span>Entrar</span>
                 <img src="./imgs/chevron-down.svg" >
                 <nav>
@@ -44,9 +57,12 @@
                 <div id="circle">
                     <p  id="circle-text">+50</p>
                 </div>
-            </div>
-        </div>
-    </section>
+            </div>         
+        </div>  
+        <div id="search-bar-mobile">
+            <span id="img-search-mobile"><img src="./imgs/search.svg" ></span>
+            <input  type="text"  placeholder="O que você está procurando?"  class="input-search-style" id="input-mobile">
+        </div> 
+    </section> 
 </body>
-
 </html>
