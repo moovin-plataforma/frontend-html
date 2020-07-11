@@ -3,11 +3,14 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 #topo-main {
     background-color: #F1F1F1;
     width: 1920px;
     height: 252.05px;
 }
+
 
 #contact {
     background-color:#DFDFDF;
@@ -15,24 +18,35 @@
     height: 32px;
     display: flex;
     align-items: center;
+    font-family:'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .text-config{
     text-align: center;
-    font: 11px/13px Open Sans;
     letter-spacing: 0.22px;
     color: #000000;
-    opacity: 1;
     padding-left: 15px;
 }
 
 #cel-img{
     margin-left: 385px;
-    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    margin-right: -15px;
 }
 
 #whats-img{
     margin-left: 78px;
+    margin-right: -6px;
 }
 
 .text-config-list {
@@ -82,29 +96,41 @@ input {
     font-size: 15px;
   }
 
-.dropdown {
+ .dropdown {
     position: relative;
     display: inline-block;
     cursor: pointer;
     margin-right: 50px;
+    font-family:'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
   }
   
-.dropdown-content {
+  .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #FFFFFF;
+    min-width: 140px;
+    box-shadow: 0px 0px 6px #00000033;
     padding: 12px 16px;
     z-index: 1;
+    margin-left: -70px;
+    font-size: 14px;
+    border-radius: 5%;
   }
+
+li.dropdown-content-item {
+    padding:5px;
+}
   
 .dropdown:hover .dropdown-content {
     display: block;
+    text-align: center;
+
   }
 
-p.dropdown-content-item:hover {
-    font-weight: bold;
+li.dropdown-content-item:hover {
+    font-weight: 800;
 }
 
 #img-bag {
