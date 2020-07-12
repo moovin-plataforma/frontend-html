@@ -92,7 +92,7 @@ a {
 }
 
 #bar-menu-mobile {
-    background-color:#e8f5e9;
+    background-color:#F1F1F1;
     height: 100%;
     width: 200px;
     position: absolute;
@@ -107,13 +107,14 @@ a {
         padding: 10px;
         font-size: 12px;
         transition: all .2s linear;
-        border-bottom: 2px solid #bdbdbd;
+        border-bottom: 2px solid #0DBC4F;
         width: 100%;
         margin:2px;
+        display: flex;
     }
 }
 .link:hover {
-    background-color: #dcedc8;
+    background-color: #5ef07e;
 }
 
 @media (max-width: 600px)  {
@@ -126,12 +127,26 @@ a {
     }
 }
 
-
 #check:checked ~ #bar-menu-mobile {
     transform: translateX(200px);
 }
 
-/* Menu Mobile fim*/
+#whats-text-mobile{
+    padding-left:6px;
+}
+
+#cell-text-mobile{
+    padding-top:3px;
+}
+
+#login-icon{
+   width:15px;
+   margin-right: 10px;
+   margin-bottom: 3px;
+}
+
+
+/* Menu Mobile width 320px*/
 
 #logo{
     margin-left: 385px;
@@ -140,7 +155,7 @@ a {
 
 @media (max-width: 600px)  {
     #logo{
-        margin-left: 50px;
+        margin-left: 80px;
         margin-right: 50px;
     }
 }
