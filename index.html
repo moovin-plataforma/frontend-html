@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="description" content="Moovin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/menu-mobile.css">
     <title>Moovin</title>
 </head>
 
 <body>
     <section id="topo-main">
+    <!-- ÁREA DE CONTATOS, "fale conosco", whats, telefone, etc -->
         <div id="contact" > 
             <img src="./imgs/phone.svg" id="cel-img">
             <p  class="text-config" >(51) 9 9920 0350</p>
@@ -25,6 +27,7 @@
         </div>
 
         <div id="search-bar-login" > 
+        <!-- MENU MOBILE -->
             <div id="menu-mobile">
                 <input type="checkbox" id="check">
                 <label id="icone-menu" for="check"><img src="./imgs/menu.svg"></label>   
@@ -54,12 +57,15 @@
                     </nav>
                 </div>
             </div>
+        <!-- MENU MOBILE FIM -->
+
+    <!-- ÁREA DE INPUT DE BUSCAS E CARRINHO/SACOLA -->
             <img src="./imgs/logo.svg" id="logo" > 
             <div id="search-bar">
                 <span id="img-search"><img src="./imgs/search.svg" ></span>
                 <input  type="text"  placeholder="O que você está procurando?" class="input-search-style">
             </div>
-            <div id="dropdown">
+            <div class="dropdown">
                 <span>Entrar</span>
                 <img src="./imgs/chevron-down.svg" >
                 <nav>
@@ -78,10 +84,12 @@
             </div>         
         </div>  
     </div>
+     <!-- INPUT SEARCH MOBILE -->
         <div id="search-bar-mobile">
             <span id="img-search-mobile"><img src="./imgs/search.svg" ></span>
             <input  type="text"  placeholder="O que você está procurando?"  class="input-search-style" id="input-mobile">
         </div> 
+    <!-- INPUT SEARCH MOBILE FIM-->   
     </section> 
 </body>
 </html>
