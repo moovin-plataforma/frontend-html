@@ -97,10 +97,14 @@ a {
 
 #menu > div > form > input[type=text] {
     width: 45em;
-    border: solid 2px #DFDFDF;
     padding: 14px;
-    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
     opacity: 1;
+    border: none;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    border-left: solid 2px;
+    border-color:#DFDFDF;
 }
 
 #menu > div > form > input[type=text]::placeholder {
@@ -118,12 +122,19 @@ input:focus-visible {
 }
 
 #menu > div > form > button {
-    border: none;
     background: none;
     cursor: pointer;
-    position: absolute;
-    top: 83px;
-    left: 86.1em;
+    /* position: absolute; */
+    /* top: 83px; */
+    /* left: 86.1em; */
+    border: none;
+    border-right: solid 2px;
+    padding: 14px;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    margin-left: -6px;
+    border-radius: 0px 5px 5px 1px;
+    border-color:#DFDFDF;
 }
 
 /* DROPDOWN ITEM */ 
@@ -171,16 +182,13 @@ input:focus-visible {
   .dropdown:hover .dropdown-content {display: block;}
 
   /* SACOLA */ 
-
-  #menu > div > span::after {
-      content: attr(quantity);
-      position: absolute;
-      right: 43em;
-      background:#000;
-      color: #F1F1F1;
-      border-radius: 100%;
-      font-size: 10px;
-      padding: 3px;
-
-  }
   
+  #menu > div > a:nth-child(4)::after {
+    content: '+50';
+    color: #F1F1F1;
+    background-color: black;
+    padding: 4px;
+    border-radius: 100%;
+    font-size: 9px;
+    margin-left: -11px;
+  }
