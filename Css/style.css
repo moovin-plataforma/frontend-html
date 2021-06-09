@@ -1,0 +1,81 @@
+/* Global */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body, h1, h2, h3, p, ul, li a {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* TOP MENU SECTION */ 
+
+#top-menu {
+    background: #F1F1F1;
+    padding: 8px 0px 8px 0px;
+}
+
+.top-menu-items {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.phones span a{
+    margin: 0px 40px 0px 0px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.24px;
+}
+
+#top-menu > div > div.phones > span:nth-child(1)::before {
+    content: "\f095";
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+    transform: rotate(45deg);
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+#top-menu > div > div.phones > span:nth-child(2)::before {
+    content: "\f232";
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+    transform: rotate(45deg);
+    margin-right: 8px;
+    font-size: 18px;
+    color:#24CD63;
+}
+
+.top-navmenu ul {
+    display: flex;
+}
+
+.top-navmenu li a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+    font-size: 13px;
+    padding-left: 2px;
+    letter-spacing: 0.22px;
+}
+
+.top-navmenu > ul > li {
+    padding: 0px 15px 0px 15px;
+}
+
+
