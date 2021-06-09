@@ -1,16 +1,57 @@
-<!doctype html>
-
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Moovin</title>
-    <meta name="description" content="Moovin">
 </head>
-
 <body>
-    <!-- Write your code here -->
-</body>
+    <header>
+        <div id="top-menu">
+            <div class="top-menu-items">
+                <div class="phones">
+                    <span><a href="tel:5551999200350">9 9920 0350</a></span>
+                    <span><a href="#" target="_blank">9920 0350</a></span>
+                </div>
 
+                <div class="top-navmenu">
+                    <ul>
+                        <li><a href="#">Lista de Desejos</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu">
+            <div class="menu-items">
+                <a href="#">
+                    <img src="./assets/imagens/logo.svg" title="Moovin Plataforma E-commerce" alt="Moovin Logo">
+                </a>
+
+                <form action="#" method="get">
+                    <input type="text" placeholder="O que você está procurando?">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+
+                <div class="dropdown">
+                    <a id="enter" class="dropbtn" href="#">Entrar</a>
+                    <div class="dropdown-content">
+                      <a href="#">Minha Conta</a>
+                      <a href="#">Meus Pedidos</a>
+                      <a href="#">Lista de Desejos</a>
+                    </div>
+                  </div>
+                <div>
+                  <a href="#"><img src="./assets/imagens/bag.svg" title="Minha Sacola" alt="bag"></a>
+                  <span class="bag-cart" quantity="+50"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
 </html>
