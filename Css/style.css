@@ -180,17 +180,7 @@ input:focus-visible {
   
   .dropdown:hover .dropdown-content {display: block;}
 
-  /* SACOLA 
-  
-  #menu > div > a:nth-child(4)::after {
-    content: '+50';
-    color: #F1F1F1;
-    background-color: black;
-    padding: 4px;
-    border-radius: 100%;
-    font-size: 9px;
-    margin-left: -11px;
-  } */ 
+  /* SACOLA */ 
 
   #menu > div > div:nth-child(4) > span::after{
     content: '+50';
@@ -203,4 +193,34 @@ input:focus-visible {
   }
 
   /* BREAKPOINTS RESPONSIVOS */ 
+  
+  @media(max-width:720px){
+      .top-menu-items {
+          justify-content: center;
+      }
 
+      .top-navmenu {
+          display: none;
+      }
+
+      .menu-items {
+        justify-content: center;
+      }
+
+      #menu > div > form > input[type=text] {
+        width: 18em;
+        margin-top: 10px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    #menu > div > form > button {
+        margin-right: 10px;
+    }
+
+    #menu > div > div:nth-child(4) > a > img {
+        margin-top: 12px;
+    }
+  }
