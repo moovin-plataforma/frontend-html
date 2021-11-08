@@ -1,16 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Moovin" />
 
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Moovin</title>
-    <meta name="description" content="Moovin">
-</head>
+  </head>
+  <body>
+    <div class="info-container">
+      <div class="container flex">
+        <div class="left-info-container flex">
+          <div class="tel-info">
+            <img src="assets/phone.svg" alt="Phone SVG" />
+            <span>(51) 9 9920 0350</span>
+          </div>
+          <div class="whatsapp-info">
+            <img src="assets/whats.svg" alt="Whatsapp SVG" />
+            <span>(51) 9 9920 0350</span>
+          </div>
+        </div>
 
-<body>
-    <!-- Write your code here -->
-</body>
+        <div class="right-info-container">
+          <a href="#">LISTA DE DESEJOS</a>
+          <a href="#">FALE CONOSCO</a>
+          <a href="#">TROCAS E DEVOLUÇÕES</a>
+        </div>
+      </div>
+    </div>
 
+    <header class="header">
+      <div class="container flex">
+        <div class="header__logo">
+          <img
+            src="assets/logo.svg"
+            alt="Logo da Moovin plataforma e-commerce"
+          />
+        </div>
+
+        <div class="header__search-box">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="O que você está procurando?"
+          />
+          <button class="search-button">
+            <img src="assets/search.svg" alt="Ícone de pesquisa." />
+          </button>
+        </div>
+
+        <nav>
+          <ul class="nav__list flex">
+            <li class="nav__item">
+              Entrar
+
+              <img src="assets/chevron-down.svg" />
+
+              <ul class="nav__listItemDrop">
+                <li>Minha conta</li>
+                <li>Meus pedidos</li>
+                <li>Lista de desejo</li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <img src="assets/Path 1.svg" alt="" />
+              <p>50+</p>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu-mobile">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
